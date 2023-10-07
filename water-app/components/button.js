@@ -19,9 +19,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     color: 'read',
     fontWeight: 'bold',
+    cursor: 'pointer'
   },
   font: {
     color: 'white',
     fontWeight: 'bold',
   },
+  meuBotao : addEventListener('click', function() {
+    alert('Botão clicado!');
+  }),
 });
