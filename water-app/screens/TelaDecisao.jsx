@@ -14,4 +14,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> bd683a1dce95ae2c17e6d6dbd1ec917794b4e7df
