@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Pressable } from 'react-native';
 export default function Buttonn({callback, color, text}) {
   const styles = StyleSheet.create({
     container: {
-      backgroundColor: color?color:'black',
+      backgroundColor: color?color:'red',
       paddingVertical: 10,
       paddingHorizontal: 20,
       borderRadius: 5,
@@ -20,7 +20,7 @@ export default function Buttonn({callback, color, text}) {
   });
 
   return (
-    <Pressable style={styles.container} onPress={callback}>
+    <Pressable style={styles.container} onPress={callback?callback:() => {}}>
       <Text style={styles.font}>{text?text:'Pressione'}</Text>
       {/* <StatusBar style="auto" /> */}
     </Pressable>

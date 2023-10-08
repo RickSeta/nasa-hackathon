@@ -6,7 +6,6 @@ import TelaDecisao from "./screens/TelaDecisao";
 import MapaMundi from "./screens/MapaMundi";
 
 const Stack = createNativeStackNavigator();
-
 export default function App() {
   return (
     <NavigationContainer>
