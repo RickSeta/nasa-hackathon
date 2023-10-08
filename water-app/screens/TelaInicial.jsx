@@ -1,9 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Image, Text, View } from 'react-native';
-import Buttonn from '../components/button';
-import GridComponent from '../components/fourbutton';
-import Fourbutton from '../components/fourbutton';
+import { useNavigation } from "@react-navigation/native";
 import Grid from '../components/fourbutton';
+import Balao from '../components/balao';
 
 export default function TelaInicial() {
   return (
@@ -11,8 +9,8 @@ export default function TelaInicial() {
       {/* <Text>Open up App.js to start working on your app!</Text> */}
       {/* <StatusBar style="auto" /> */}
       {/* <Buttonn color='red' text={'Botao parametrizado'} callback={()=>{alert('Pode botar qualquer função aqui!!')}}/> */}
-      <Grid color='red' text={'Botao parametrizado'} callback={()=>{alert('Pode botar qualquer função aqui!!')}}/>
-      {/* <Fourbutton></Fourbutton> */}
+      {/* <Grid color='red' text={'Botao parametrizado'} callback={()=>{alert('Pode botar qualquer função aqui!!')}}/> */}
+      <Balao></Balao>
     </View>
   );
 }
