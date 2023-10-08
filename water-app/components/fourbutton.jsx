@@ -2,12 +2,20 @@ import React from 'react';
 import { View, FlatList, Text, StyleSheet } from 'react-native';
 import Buttonn from './button';
 
-const Grid = ({resps, telaAtual}) => {
-  resps = resps?resps:[]
+const Grid = ({dadosPergunta, telaAtual, dropStateChange, dropletState}) => {
+  const resps = dadosPergunta?dadosPergunta.resps:[]
   const data = resps.map((resp, i) => (
-    { 
-      id:`${i+1}`, title: <Buttonn text={resp.text} callback={() => telaAtual(resp.prox)} />
-    }));
+  { 
+      id:`${i+1}`, title: <Buttonn text={resp.text} callback={() => {
+        telaAtual(resp.prox)
+        if(dadosPergunta.correct.includes(resp.key)) {
+          dropStateChange(dropletState+1)
+        } else {
+          dropStateChange(dropletState-1)
+        }
+      }} 
+      dropStateChange={dropStateChange}/>
+  }));
   const renderItem = ({ item }) => (
     <View style={styles.gridItem}>
       <Text >{item.title}</Text>
