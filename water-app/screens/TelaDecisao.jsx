@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import quizzService from '../util/questions';
 import Grid from '../components/fourbutton';
 import Balao from '../components/balao';
+import Gota from '../components/gota';
 
 export default function TelaDecisao({route,navigation}) {
   const {idTela} = route.params
@@ -20,6 +21,7 @@ export default function TelaDecisao({route,navigation}) {
       <Grid telaAtual={setTelaAtual} resps={dadosPergunta.resps}/>
       <Text style={styles.container}>Tela: {telaAtual} Estado: {dropletState}</Text>
       <Balao></Balao>
+      <Gota></Gota>
     </ImageBackground>
   );
 }
