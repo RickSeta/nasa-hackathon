@@ -5,6 +5,7 @@ class QuizzService {
     getQuizzSpecs(key) {
         return {
             desc: messageService.getMessage(key).desc,
+            image: messageService.getMessage(key).imagemFundo,
             resps: [
                 {text: messageService.getMessage(key).resp1, prox: messageService.getMessage(key).prox}, 
                 {text: messageService.getMessage(key).resp2, prox: messageService.getMessage(key).prox} , 
@@ -14,7 +15,7 @@ class QuizzService {
         }  
         
     }
-}
+} 
 
 let quizzService = Object.freeze(new QuizzService());
 export default quizzService;
