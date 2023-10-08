@@ -4,6 +4,7 @@ import quizzService from '../util/questions';
 import Grid from '../components/fourbutton';
 import Balao from '../components/balao';
 import FloatingView from '../components/animation/FloatingView';
+import Gota from '../components/gota';
 
 export default function TelaDecisao({route,navigation}) {
   const {idTela} = route.params
