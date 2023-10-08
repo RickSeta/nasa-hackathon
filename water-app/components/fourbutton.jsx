@@ -29,18 +29,11 @@ const Grid = ({callback, color, text}) => {
 
 const styles = StyleSheet.create({
   gridItem: {
-    // flex: 1,
     margin: 8,
     padding: 0,
-    // backgroundColor: '#e0e0e0',
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 8,
-  },
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
 
