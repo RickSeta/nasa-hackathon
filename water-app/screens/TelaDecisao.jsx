@@ -13,9 +13,11 @@ export default function TelaDecisao({route,navigation}) {
   
   let dadosPergunta = quizzService.getQuizzSpecs(telaAtual);
 
+  /*
   useEffect(()=>{
     console.log(telaAtual+ dropletState)
   },[telaAtual,dropletState])
+  */
 
   return (
     <View style={[styles.container]}>
@@ -24,12 +26,12 @@ export default function TelaDecisao({route,navigation}) {
         </View>
           <View style={[styles.balaoContainer]}>
             <FloatingView>
-                <Balao></Balao>
+                <Balao pergunta={dadosPergunta.desc} dropletState={dropletState}></Balao>
             </FloatingView>
           </View>
         
         <View style={[styles.grid]}>
-          <Grid telaAtual={setTelaAtual} resps={dadosPergunta.resps}/>
+          <Grid telaAtual={setTelaAtual} dadosPergunta={dadosPergunta} dropStateChange={setDropletState} dropletState={dropletState}/>
         </View>
         
         {/* <Text style={styles.container}>Tela: {telaAtual} Estado: {dropletState}</Text> */}

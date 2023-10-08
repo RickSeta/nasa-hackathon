@@ -1,13 +1,26 @@
 import React, { useState } from 'react';
 import { StyleSheet,ImageBackground, Pressable, Image, Text, View } from 'react-native';
 
-export default function Balao() {
+function loadDropletImageSuffix(state) {
+    if(-2 < state && state < 2) {
+        return 1
+    } else {
+        if(state <= -2){
+            return 3
+        }
+        if(state >= 2){
+            return 0
+        }        
+    }
+}
+
+export default function Balao({pergunta, dropletState}) {
     return (
         <View style={styles.container}>
-            <ImageBackground source={require('../assets/balloonDropletStates/state1.png')} resizeMode="center" style={styles.image} >
+            <ImageBackground source={require(`../assets/balloonDropletStates/state${loadDropletImageSuffix(dropletState)}.png`)} resizeMode="center" style={styles.image} >
                 
                 <View style={[styles.textContainer]}>   
-                    <Text style={styles.text}>Seu texto aqui</Text>
+                    <Text style={styles.text}>{pergunta}</Text>
                 </View>
             </ImageBackground>
         </View>
