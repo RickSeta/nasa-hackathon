@@ -1,20 +1,18 @@
 import messageService from "./messages";
 
 class QuizzService {
-    #quizz = {
-        'id1': {
-            desc: messageService.getMessage('pergunta.id1.desc'),
-            resps: [
-                {text: messageService.getMessage('pergunta.id1.resp1'), prox: 'id?'}, 
-                {text: messageService.getMessage('pergunta.id1.resp2'), prox: 'id!'} , 
-                {text: messageService.getMessage('pergunta.id1.resp3'), prox: 'id@'}, 
-                {text: messageService.getMessage('pergunta.id1.resp4'), prox: 'id%'}
-            ],
-        }  
-    }
 
     getQuizzSpecs(key) {
-        return this.#quizz[key]
+        return {
+            desc: messageService.getMessage(key).desc,
+            resps: [
+                {text: messageService.getMessage(key).resp1, prox: messageService.getMessage(key).prox}, 
+                {text: messageService.getMessage(key).resp2, prox: messageService.getMessage(key).prox} , 
+                {text: messageService.getMessage(key).resp3, prox: messageService.getMessage(key).prox}, 
+                {text: messageService.getMessage(key).resp4, prox: messageService.getMessage(key).prox}
+            ],
+        }  
+        
     }
 }
 
