@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Pressable, Image } from 'react-native';
 export default function Balao() {
     return (
         <View style={styles.container}>
-            <Image source={require('water-app/assets/balao/Balão_1.png')} style={styles.image} />
+            {/* <Image source={require('water-app/assets/balao/Balão_1.png')} style={styles.image} /> */}
         </View>
     );
 }
