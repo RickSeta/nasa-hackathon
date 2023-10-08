@@ -5,7 +5,6 @@ import TelaInicial from "./screens/TelaInicial";
 import TelaDecisao from "./screens/TelaDecisao";
 
 const Stack = createNativeStackNavigator();
-
 export default function App() {
   return (
     <NavigationContainer>
