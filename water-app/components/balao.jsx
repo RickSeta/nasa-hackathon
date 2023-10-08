@@ -5,6 +5,7 @@ export default function Balao() {
     return (
         <View style={styles.container}>
             <Image source={require('../assets/balloonDropletStates/state1.png')} resizeMode="center" style={styles.image} />
+            <Text style={styles.text}>Seu texto aqui</Text>
         </View>
     );
 }
@@ -17,6 +18,14 @@ const styles = StyleSheet.create({
     },
     image: {
         width: 200, // Largura da imagem
-    height: 200, // Altura da imagem
+        height: 200, // Altura da imagem
+        position: 'relative'
+    },
+    text: {
+        fontSize: 16, // Tamanho da fonte do texto
+        width:150,
+        position: 'absolute',
+        top: '105px',
+        left: '65px'
     },
 });
