@@ -4,7 +4,7 @@ import Buttonn from './button';
 
 const Grid = ({dadosPergunta, telaAtual, dropStateChange, dropletState}) => {
   const resps = dadosPergunta?dadosPergunta.resps:[]
-  const data = resps.map((resp, i) => (
+  const data = resps.filter(resp=>resp.text != '').map((resp, i) => (
   { 
       id:`${i+1}`, title: <Buttonn text={resp.text} callback={() => {
         telaAtual(resp.prox)
