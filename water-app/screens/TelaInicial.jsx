@@ -2,12 +2,21 @@ import { StyleSheet, Image, Text, View } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
 import Buttonn from '../components/button';
 import messageService from '../util/messages';
+import Grid from '../components/fourbutton';
+import Balao from '../components/balao';
 
 export default function TelaInicial() {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <Buttonn color='red' text={messageService.getMessage('botao.iniciar')} callback={() => navigation.navigate('TelaDecisao')}/>
+      // comentado para ser passado para próxima tela
+      //<Buttonn color='red' text={messageService.getMessage('botao.iniciar')} callback={() => navigation.navigate('TelaDecisao')}/>
+      {/* <Text>Open up App.js to start working on your app!</Text> */}
+      {/* <StatusBar style="auto" /> */}
+      {/* <Buttonn color='red' text={'Botao parametrizado'} callback={()=>{alert('Pode botar qualquer função aqui!!')}}/> */}
+      <Grid color='red' text={'Botao parametrizado'} callback={() => navigation.navigate('TelaDecisao')}/>
+      <Grid color='red' text={'Botao parametrizado'} callback={()=>{navigation.navigate('MapaMundi')}}/>
+      {/* <Fourbutton></Fourbutton> */}
     </View>
   );
 }

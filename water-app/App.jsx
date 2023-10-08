@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import * as React from 'react';
 import TelaInicial from "./screens/TelaInicial";
 import TelaDecisao from "./screens/TelaDecisao";
+import MapaMundi from "./screens/MapaMundi";
 
 const Stack = createNativeStackNavigator();
 export default function App() {
@@ -24,7 +25,15 @@ export default function App() {
             title: 'Eai qual vai ser?',
             headerShown: false,
           }}
-        />                        
+        />
+        <Stack.Screen                      
+          name="MapaMundi"
+          component={MapaMundi}
+          options={{
+            title: 'Water floW',
+            headerShown: false,
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
