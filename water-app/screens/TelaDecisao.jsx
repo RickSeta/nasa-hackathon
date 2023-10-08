@@ -4,7 +4,6 @@ import Grid from '../components/fourbutton';
 
 export default function TelaDecisao() {
   let dadosPergunta = quizzService.getQuizzSpecs('id1'); 
-  console.log(dadosPergunta);
   return (
     <View style={styles.container}>
       <Grid resps={dadosPergunta.resps}/>
