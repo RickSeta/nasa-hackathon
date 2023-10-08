@@ -2,11 +2,11 @@ import React from 'react';
 import { View, FlatList, Text, StyleSheet } from 'react-native';
 import Buttonn from './button';
 
-const Grid = ({resps}) => {
+const Grid = ({resps, telaAtual}) => {
   resps = resps?resps:[]
   const data = resps.map((resp, i) => (
     { 
-      id:`${i+1}`, title: <Buttonn text={resp.text} callback={() => alert(`Callback para ${resp.prox}`)} />
+      id:`${i+1}`, title: <Buttonn text={resp.text} callback={() => telaAtual(resp.prox)} />
     }));
   const renderItem = ({ item }) => (
     <View style={styles.gridItem}>
