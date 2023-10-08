@@ -9,8 +9,6 @@ export default function TelaInicial() {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      // comentado para ser passado para próxima tela
-      //<Buttonn color='red' text={messageService.getMessage('botao.iniciar')} callback={() => navigation.navigate('TelaDecisao')}/>
       {/* <Text>Open up App.js to start working on your app!</Text> */}
       {/* <StatusBar style="auto" /> */}
       {/* <Buttonn color='red' text={'Botao parametrizado'} callback={()=>{alert('Pode botar qualquer função aqui!!')}}/> */}

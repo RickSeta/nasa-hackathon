@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="TelaInicial">
+      <Stack.Navigator initialRouteName="MapaMundi">
         <Stack.Screen
           name="TelaInicial"
           component={TelaInicial}

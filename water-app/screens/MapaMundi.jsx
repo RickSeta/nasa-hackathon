@@ -17,8 +17,7 @@ const navigation = useNavigation();
                 resizeMode="center" 
                 style={[styles.image,styles.container, {opacity: isShowing?1:0}]}>
                 
-                <Pressable onPress={()=>navigation.navigate('TelaInicial')} style={[styles.highlight]} onPointerLeave={()=>setShowing(false)} onPointerEnter={()=>setShowing(true)} >
-                    
+                <Pressable onPress={()=>navigation.navigate('TelaDecisao')} style={[styles.highlight]} onPointerLeave={()=>setShowing(false)} onPointerEnter={()=>setShowing(true)} >
                 </Pressable>
             </ImageBackground>
             

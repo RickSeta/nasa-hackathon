@@ -3,6 +3,7 @@ import { View, FlatList, Text, StyleSheet } from 'react-native';
 import Buttonn from './button';
 
 const Grid = ({resps}) => {
+  resps = resps?resps:[]
   const data = resps.map((resp, i) => (
     { 
       id:`${i+1}`, title: <Buttonn text={resp.text} callback={() => alert(`Callback para ${resp.prox}`)} />
