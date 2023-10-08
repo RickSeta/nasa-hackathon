@@ -3,13 +3,13 @@ import { NavigationContainer } from '@react-navigation/native';
 import * as React from 'react';
 import TelaInicial from "./screens/TelaInicial";
 import TelaDecisao from "./screens/TelaDecisao";
+import MapaMundi from "./screens/MapaMundi";
 
 const Stack = createNativeStackNavigator();
-
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="TelaInicial">
+      <Stack.Navigator initialRouteName="MapaMundi">
         <Stack.Screen
           name="TelaInicial"
           component={TelaInicial}
@@ -25,7 +25,15 @@ export default function App() {
             title: 'Eai qual vai ser?',
             headerShown: false,
           }}
-        />                        
+        />
+        <Stack.Screen                      
+          name="MapaMundi"
+          component={MapaMundi}
+          options={{
+            title: 'Water floW',
+            headerShown: false,
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
