@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
-import { StyleSheet, Pressable, Image, Text, View } from 'react-native';
+import { StyleSheet,ImageBackground, Pressable, Image, Text, View } from 'react-native';
 
 export default function Balao() {
     return (
         <View style={styles.container}>
-            <Image source={require('../assets/balloonDropletStates/state1.png')} resizeMode="center" style={styles.image} />
-            <Text style={styles.text}>Seu texto aqui</Text>
+            <ImageBackground source={require('../assets/balloonDropletStates/state1.png')} resizeMode="center" style={styles.image} >
+                
+                <View style={[styles.textContainer]}>   
+                    <Text style={styles.text}>Seu texto aqui</Text>
+                </View>
+            </ImageBackground>
         </View>
     );
 }
@@ -17,15 +21,21 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     image: {
-        width: 200, // Largura da imagem
-        height: 200, // Altura da imagem
-        position: 'relative'
+        width: 400, // Largura da imagem
+        height: 400, // Altura da imagem
+        position: 'relative',
+        justifyContent: 'center'
     },
     text: {
         fontSize: 16, // Tamanho da fonte do texto
-        width:150,
-        position: 'absolute',
-        top: '105px',
-        left: '65px'
+        width:'100%',
+        alignSelf: 'center',
+        position: 'relative',
     },
+    textContainer:{
+        width: '70%',
+        bottom: 35,
+        alignSelf: 'center',
+        left: '10%'
+    }
 });

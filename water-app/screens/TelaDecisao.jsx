@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View,ImageBackground } from 'react-native';
+import { StyleSheet, Text,Image, View,ImageBackground } from 'react-native';
 import React, { useState, useEffect } from 'react';
 import quizzService from '../util/questions';
 import Grid from '../components/fourbutton';
 import Balao from '../components/balao';
+import FloatingView from '../components/animation/FloatingView';
 
 export default function TelaDecisao({route,navigation}) {
   const {idTela} = route.params
@@ -16,25 +17,53 @@ export default function TelaDecisao({route,navigation}) {
   },[telaAtual,dropletState])
 
   return (
-    <ImageBackground source={dadosPergunta.image} resizeMode="center" style={styles.image}>
-      <Grid telaAtual={setTelaAtual} resps={dadosPergunta.resps}/>
-      <Text style={styles.container}>Tela: {telaAtual} Estado: {dropletState}</Text>
-      <Balao></Balao>
-    </ImageBackground>
+    <View style={[styles.container]}>
+        <View style={[styles.imageContainer]}>
+          <Image style={styles.image} resizeMode='center' source={dadosPergunta.image}/>
+        </View>
+          <View style={[styles.balaoContainer]}>
+            <FloatingView>
+                <Balao></Balao>
+            </FloatingView>
+          </View>
+        
+        <View style={[styles.grid]}>
+          <Grid telaAtual={setTelaAtual} resps={dadosPergunta.resps}/>
+        </View>
+        
+        {/* <Text style={styles.container}>Tela: {telaAtual} Estado: {dropletState}</Text> */}
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#06384D',
+    overflow: 'hidden'
   },
   
   image: {
-   
     width: '100%',
     height: '110%', 
     justifyContent: 'center', 
     alignItems: 'center',
-    backgroundColor: '#06384D'
+    position: 'absolute'
   },
+  imageContainer:{
+    width: '70%',
+    height: '100%',
+    alignSelf: 'center',
+    bottom: 18,
+  },
+  grid: {
+    alignSelf: 'center',
+    bottom: 5,
+    position: 'absolute'
+  },
+  balaoContainer:{
+    alignSelf: 'center',
+    position: 'absolute',
+    left: "10%"
+  }
 });
