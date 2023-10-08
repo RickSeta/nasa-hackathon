@@ -8,7 +8,7 @@ export default function TelaInicial() {
       <Text>Open up App.js to ssssstart working on your app!</Text>
       {/* <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" /> */}
-      <Buttonn></Buttonn>
+      <Buttonn color='red' text={'Botao parametrizado'} callback={()=>{alert('Pode botar qualquer função aqui!!')}}/>
     </View>
   );
 }

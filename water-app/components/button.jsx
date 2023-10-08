@@ -1,31 +1,30 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Pressable } from 'react-native';
 
-export default function Buttonn() {
+export default function Buttonn({callback, color, text}) {
+  const styles = StyleSheet.create({
+    container: {
+      backgroundColor: color?color:'black',
+      paddingVertical: 10,
+      paddingHorizontal: 20,
+      borderRadius: 5,
+      alignItems: 'center',
+      color: 'read',
+      fontWeight: 'bold',
+      cursor: 'pointer'
+    },
+    font: {
+      color: 'white',
+      fontWeight: 'bold',
+    },
+  });
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.font}>Enviar</Text>
+    <Pressable style={styles.container} onPress={callback}>
+      <Text style={styles.font}>{text?text:'Pressione'}</Text>
       {/* <StatusBar style="auto" /> */}
-    </View>
+    </Pressable>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: 'black',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 5,
-    alignItems: 'center',
-    color: 'read',
-    fontWeight: 'bold',
-    cursor: 'pointer'
-  },
-  font: {
-    color: 'white',
-    fontWeight: 'bold',
-  },
-  meuBotao : addEventListener('click', function() {
-    alert('Botão clicado!');
-  }),
-});
+
