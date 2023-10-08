@@ -1,10 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Pressable, Image } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Pressable, Image, Text, View } from 'react-native';
 
 export default function Balao() {
     return (
         <View style={styles.container}>
-            {/* <Image source={require('water-app/assets/balao/Balão_1.png')} style={styles.image} /> */}
+            <Image source={require('../assets/balloonDropletStates/state1.png')} resizeMode="center" style={styles.image} />
         </View>
     );
 }
@@ -12,11 +12,11 @@ export default function Balao() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
         justifyContent: 'center',
+        alignItems: 'center',
     },
     image: {
-        width: 200, // Adjust the width as needed
-        height: 200, // Adjust the height as needed
+        width: 200, // Largura da imagem
+    height: 200, // Altura da imagem
     },
 });
