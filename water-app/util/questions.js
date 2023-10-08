@@ -6,6 +6,7 @@ class QuizzService {
         return {
             desc: messageService.getMessage(key).desc,
             image: messageService.getMessage(key).imagemFundo,
+            comentario: messageService.getMessage(key).comentario,
             resps: [
                 {text: messageService.getMessage(key).resp1, key: 'resp1', prox: messageService.getMessage(key).prox}, 
                 {text: messageService.getMessage(key).resp2, key: 'resp2', prox: messageService.getMessage(key).prox}, 
