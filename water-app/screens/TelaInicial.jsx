@@ -2,6 +2,7 @@ import { StyleSheet, Image, Text, View } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
 import Buttonn from '../components/button';
 import Grid from '../components/fourbutton';
+import Balao from '../components/balao';
 
 export default function TelaInicial() {
   const navigation = useNavigation();
