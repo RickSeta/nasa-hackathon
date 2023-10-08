@@ -4,6 +4,7 @@ import * as React from 'react';
 import TelaInicial from "./screens/TelaInicial";
 import TelaDecisao from "./screens/TelaDecisao";
 import MapaMundi from "./screens/MapaMundi";
+import Brasil from "./screens/Countries/Brasil";
 
 const Stack = createNativeStackNavigator();
 export default function App() {
@@ -29,6 +30,14 @@ export default function App() {
         <Stack.Screen                      
           name="MapaMundi"
           component={MapaMundi}
+          options={{
+            title: 'Water floW',
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen                      
+          name="Brasil"
+          component={Brasil}
           options={{
             title: 'Water floW',
             headerShown: false,

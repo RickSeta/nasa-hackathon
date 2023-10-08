@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { StyleSheet,Pressable, ImageBackground, Text, View } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
-import FloatingView from '../components/animation/FloatingView';
+import FloatingView from '../../components/animation/FloatingView';
 
-export default function MapaMundi() {
+export default function Brasil() {
     
 const navigation = useNavigation();
     const [isShowing, setShowing] = useState(false)
@@ -11,14 +11,13 @@ const navigation = useNavigation();
   return (
     <View style={[styles.container]}>
         
-        <FloatingView>
-            <ImageBackground source={require('../assets/screenBackgrounds/Mapa_Mundi.png')} resizeMode="center" style={styles.image}>
+            <ImageBackground source={require('../../assets/screenBackgrounds/countries/Brasil/BrasilZ.png')} resizeMode="center" style={styles.image}>
                     <ImageBackground
-                        source={require('../assets/screenBackgrounds/countries/Brasil/BrasilHighlight.png')}
+                        source={require('../../assets/screenBackgrounds/countries/Brasil/SouthWest/BrasilSouthWestHighlight.png')}
                         resizeMode="center" 
                         style={[styles.image,styles.container, {opacity: isShowing?1:0}]}>
                         
-                        <Pressable onPress={()=>navigation.navigate('Brasil')} style={[styles.highlight]} onPointerLeave={()=>setShowing(false)} onPointerEnter={()=>setShowing(true)} >
+                        <Pressable onPress={()=>navigation.navigate('TelaDecisao')} style={[styles.highlight]} onPointerLeave={()=>setShowing(false)} onPointerEnter={()=>setShowing(true)} >
                             
                         </Pressable>
                     </ImageBackground>
@@ -26,8 +25,6 @@ const navigation = useNavigation();
                 
                 
             </ImageBackground>
-
-        </FloatingView>
     </View>
   );
 }
@@ -40,16 +37,16 @@ const styles = StyleSheet.create({
   image: {
    
     width: '100%',
-    height: '110%', 
+    height: '100%', 
     justifyContent: 'center', 
     alignItems: 'center',
     backgroundColor: '#06384D'
   },
   highlight: {
-    marginLeft: '5%',
-    marginBottom:'7%',
-    width: '10%', 
-    height: '17%',
+    marginLeft: '20%',
+    marginTop:'2¢',
+    width: '4%', 
+    height: '7%',
     cursor: 'pointer'
   },
   
