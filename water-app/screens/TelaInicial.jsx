@@ -1,9 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Image, Text, View } from 'react-native';
-import Buttonn from '../components/button';
 import { useNavigation } from "@react-navigation/native";
-import GridComponent from '../components/fourbutton';
-import Fourbutton from '../components/fourbutton';
 import Grid from '../components/fourbutton';
 
 export default function TelaInicial() {
