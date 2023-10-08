@@ -1,9 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native';
+import quizzService from '../util/questions';
+import Grid from '../components/fourbutton';
 
 export default function TelaDecisao() {
+  let dadosPergunta = quizzService.getQuizzSpecs('id1'); 
   return (
     <View style={styles.container}>
-      <Text>HEY!</Text>
+      <Grid resps={dadosPergunta.resps}/>
     </View>
   );
 }

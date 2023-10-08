@@ -2,18 +2,15 @@ import React from 'react';
 import { View, FlatList, Text, StyleSheet } from 'react-native';
 import Buttonn from './button';
 
-const Grid = ({callback, color, text}) => {
-  const data = [
-    { id: '1', title: <Buttonn callback={callback}  color={color}/> },
-    { id: '2', title: <Buttonn callback={callback}  color={color}/> },
-    { id: '3', title: <Buttonn callback={callback}  color={color}/> },
-    { id: '4', title: <Buttonn callback={callback} color={color}/> },
-    // Adicione mais itens conforme necessário
-  ];
-
+const Grid = ({resps}) => {
+  resps = resps?resps:[]
+  const data = resps.map((resp, i) => (
+    { 
+      id:`${i+1}`, title: <Buttonn text={resp.text} callback={() => alert(`Callback para ${resp.prox}`)} />
+    }));
   const renderItem = ({ item }) => (
     <View style={styles.gridItem}>
-      <Text text={text}>{item.title}</Text>
+      <Text >{item.title}</Text>
     </View>
   );
 
