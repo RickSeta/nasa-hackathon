@@ -27,7 +27,7 @@ We shall add support for more languages and release mobile versions of the game.
 Had other cool idea that we haven't mentioned here? [Contact us](https://www.spaceappschallenge.org/2023/find-a-team/brasa/?tab=members)!
 
 
-## Meet the Team 🔖
+## See ya 🔖
 
 [We all](https://www.spaceappschallenge.org/2023/find-a-team/brasa/?tab=members) can't even express how grateful we are for participating
 in this event. We've learned a lot and had tons of laughs, it was a unique experience that allowed our growth far beyond what we expected.
