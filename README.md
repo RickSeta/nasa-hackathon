@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="askr" title="logonew" src=".github/logo.png" height="220px" width="440px" />
+  <img alt="askr" title="logonew" src=".github/logo-new.png" height="220px" width="440px" />
 </h1>
 <br>
 <br>
