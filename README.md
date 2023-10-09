@@ -16,7 +16,7 @@
 
 **Water floW** is an interactive game that aims to provide learning for children up to 12 years old. With a user-friendly and easy-to-understand interface, the proposal is to present quizzes that, when answered correctly, reward the player, and when answered incorrectly, help the player learn, creating a comfortable environment that allows young people to gain knowledge quickly and enjoyably, while understanding the consequences of correct and incorrect use of water in our daily lives. It demonstrates how their choices impact their lives, whether in everyday activities, industry, and also directly affect the climate.
 
- *  _Try out [HERE](water-flow-phi.vercel.app)_
+ *  _Try out [HERE](https://water-flow-b2p0y06jl-henriques-projects-dedcd61d.vercel.app/)_
 
  *  _Video Demo [HERE]()_
 
