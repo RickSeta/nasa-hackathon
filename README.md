@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="askr" title="Pomo.up" src=".github/logo.png" height="220px" width="440px" />
+  <img alt="askr" title="logonew" src=".github/logo.png" height="220px" width="440px" />
 </h1>
 <br>
 <br>
@@ -19,5 +19,21 @@
  *  _Video Demo [HERE]()_
 
 ## Future Work 🛠
+
+This was a prototype after all! There is still a lot of room for improvement. 
+We intend to expand even further the app's features by pulling the quiz contents from official scientific and educational sources.
+We shall add support for more languages and release mobile versions of the game.
+
+Had other cool idea that we haven't mentioned here? [Contact us](https://www.spaceappschallenge.org/2023/find-a-team/brasa/?tab=members)!
+
+
+## Meet the Team 🔖
+
+[We all](https://www.spaceappschallenge.org/2023/find-a-team/brasa/?tab=members) can't even express how grateful we are for participating
+in this event. We've learned a lot and had tons of laughs, it was a unique experience that allowed our growth far beyond what we expected.
+
+To anyone who has read this far, thank you for tuning in! We will see you in the next Hackathon! 
+
+
 
 
