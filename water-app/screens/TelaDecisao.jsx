@@ -53,10 +53,10 @@ const styles = StyleSheet.create({
 
   comentario:{
     position: 'absolute',
-    alignSelf: 'flex-start',
+    alignSelf: 'center',
     width: '50%',
     height: '30%',
-    bottom: 5
+    bottom: 50
   }
   ,
   image: {
