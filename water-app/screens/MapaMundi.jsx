@@ -15,7 +15,7 @@ const navigation = useNavigation();
         <FloatingView>
             <ImageBackground source={require('../assets/screenBackgrounds/Mapa_Mundi.png')} resizeMode="center" style={styles.image}>
                     <View style={[styles.balaoContainer]}> 
-                          <Balao pergunta={'Hello everyone, my name is Droplet. I may be small, but Im full of curiosities and fun! Shall we explore the amazing water cycle together today?'} dropletState={2}></Balao>
+                          <Balao pergunta={'Hello everyone, my name is Droplet. I     may be small, but Im full of trivia and fun! Shall we explore the amazing cycle of water together today? LETS GO!'} dropletState={2}></Balao>
                     </View>
                     <ImageBackground
                         source={require('../assets/screenBackgrounds/countries/Brasil/BrasilHighlight.png')}

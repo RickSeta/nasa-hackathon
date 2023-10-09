@@ -23,7 +23,7 @@ export default function App() {
           name="TelaDecisao"
           component={TelaDecisao}
           options={{
-            title: 'Eai qual vai ser?',
+            title: 'Water floW',
             headerShown: false,
           }}
         />

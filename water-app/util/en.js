@@ -26,7 +26,7 @@ export const en_msgs = {
         imagemFundo: require('../assets/screenBackgrounds/Lencol.png'),
     },
     Lencol2:{
-        desc: 'See that white part under the rocks? Thats underground water, also know as aquifer.',
+        desc: 'See that white part under the rocks? Thats is underground water! Also known as our beloved Aquifer!',
         resp1: 'What else?',
         resp2: '',
         resp3: '',
@@ -73,7 +73,7 @@ export const en_msgs = {
         imagemFundo: require('../assets/screenBackgrounds/Lencol.png')
     },
     Arvore2:{
-        desc: 'Right. The tree will get us from under the ground with these deep roots. Lets go up?',
+        desc: 'Right! The tree will get us from underground with these deep roots... Lets go up?',
         resp1: 'Yes!',
         resp2: 'Changed my mind',
         resp3: '',
@@ -84,7 +84,7 @@ export const en_msgs = {
         imagemFundo: require('../assets/screenBackgrounds/Arvore.png')
     },
     Arvore3:{
-        desc: 'Oh! This is really high! Better be carefull not to fall. Where are we going now?',
+        desc: 'Oh! This is really high! Better be carefull not to fall! Where are we heading now?',
         resp1: 'Go back down!',
         resp2: 'Lets get to the leaves!',
         resp3: '',
@@ -96,7 +96,7 @@ export const en_msgs = {
     },
      
     Arvore4:{
-        desc: 'Wow! It is so high, but so hot!   The tree is breathing so it looks like we are going back to the sky!',
+        desc: 'Wow! It is so high, but also so hot! The tree is breathing! You know what this means? It looks like we are going back to the sky!',
         resp1: 'Evapotranspiration!',
         resp2: '',
         resp3: '',
