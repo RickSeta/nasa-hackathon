@@ -9,7 +9,7 @@ class MessageService {
     }
 
     getLocale() {
-        return 'ptbr';
+        return 'en';
     }
 
     getMessage(key) {

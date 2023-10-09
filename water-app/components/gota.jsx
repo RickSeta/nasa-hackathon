@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { StyleSheet, Pressable, Image, Text, View } from 'react-native';
 
-export default function Gota() {
+export default function Gota({texto}) {
     return (
         <View style={styles.container}>
             <Image source={require('../assets/gotaR/Gotinha.png')} resizeMode="center" style={styles.image} />
-            <Text style={styles.text}>Seu texto aqui</Text>
+            <Text style={styles.text}>{texto}</Text>
         </View>
     );
 }
@@ -23,10 +23,7 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 16, // Tamanho da fonte do texto
-        width:150,
         position: 'absolute',
-        top: '124px',
-        left: '38px',
         color: 'white',
         fontStyle: 'Bold'
     },

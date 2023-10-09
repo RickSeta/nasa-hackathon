@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet,Pressable, ImageBackground, Text, View } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
 import FloatingView from '../components/animation/FloatingView';
+import Balao from '../components/balao';
 
 export default function MapaMundi() {
     
@@ -13,6 +14,9 @@ const navigation = useNavigation();
         
         <FloatingView>
             <ImageBackground source={require('../assets/screenBackgrounds/Mapa_Mundi.png')} resizeMode="center" style={styles.image}>
+                    <View style={[styles.balaoContainer]}> 
+                          <Balao pergunta={'Hello everyone, my name is Droplet. I may be small, but Im full of curiosities and fun! Shall we explore the amazing water cycle together today?'} dropletState={2}></Balao>
+                    </View>
                     <ImageBackground
                         source={require('../assets/screenBackgrounds/countries/Brasil/BrasilHighlight.png')}
                         resizeMode="center" 
@@ -52,5 +56,10 @@ const styles = StyleSheet.create({
     height: '17%',
     cursor: 'pointer'
   },
+  balaoContainer:{
+    alignSelf: 'center',
+    position: 'absolute',
+    left: "10%"
+  }
   
 });

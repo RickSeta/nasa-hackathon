@@ -69,7 +69,7 @@ export const ptbr_msgs = {
         resp4: '',
         gameover: '',
         prox: 'Arvore2',
-        corretas:['resp1'],
+        corretas:['resp2'],
         imagemFundo: require('../assets/screenBackgrounds/Lencol.png')
     },
     Arvore2:{
@@ -96,8 +96,8 @@ export const ptbr_msgs = {
     },
      
     Arvore4:{
-        desc: 'Nossa aqui é tão alto, mas está tão quente, a plantinha está transpirando, parece que vamos voltar pro céu.',
-        resp1: 'Evapotranspiração!',
+        desc: 'Nossa aqui é tão alto,Wow! It is so high, but so hot! The little tree is breathing so we need to get back to the sky!',
+        resp1: 'Evapotranspiration!',
         resp2: '',
         resp3: '',
         resp4: '',

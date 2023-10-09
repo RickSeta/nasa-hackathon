@@ -2,11 +2,11 @@ import React from 'react';
 import { View, FlatList, Text, StyleSheet } from 'react-native';
 import Buttonn from './button';
 
-const Grid = ({dadosPergunta, telaAtual, dropStateChange, dropletState}) => {
+const Grid = ({dadosPergunta, color, telaAtual, dropStateChange, dropletState}) => {
   const resps = dadosPergunta?dadosPergunta.resps:[]
   const data = resps.filter(resp=>resp.text != '').map((resp, i) => (
   { 
-      id:`${i+1}`, title: <Buttonn text={resp.text} callback={() => {
+      id:`${i+1}`, title: <Buttonn color={color} text={resp.text} callback={() => {
         telaAtual(resp.prox)
         if(dadosPergunta.correct.includes(resp.key)) {
           dropStateChange(dropletState+1)

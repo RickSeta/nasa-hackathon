@@ -14,7 +14,7 @@ export default function Buttonn({callback, color, text}) {
       cursor: 'pointer'
     },
     font: {
-      color: 'white',
+      color: 'black',
       fontWeight: 'bold',
     },
   });

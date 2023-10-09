@@ -31,8 +31,13 @@ export default function TelaDecisao({route,navigation}) {
           </View>
         
         <View style={[styles.grid]}>
-          <Grid telaAtual={setTelaAtual} dadosPergunta={dadosPergunta} dropStateChange={setDropletState} dropletState={dropletState}/>
+          <Grid telaAtual={setTelaAtual} color={'#FFCB8C'} dadosPergunta={dadosPergunta} dropStateChange={setDropletState} dropletState={dropletState}/>
         </View>
+
+        <View style={styles.comentario}>
+          <Gota texto={dadosPergunta.comentario}></Gota>
+        </View>
+        
         
         {/* <Text style={styles.container}>Tela: {telaAtual} Estado: {dropletState}</Text> */}
     </View>
@@ -45,7 +50,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#06384D',
     overflow: 'hidden'
   },
-  
+
+  comentario:{
+    position: 'absolute',
+    alignSelf: 'flex-start',
+    width: '50%',
+    height: '30%',
+    bottom: 5
+  }
+  ,
   image: {
     width: '100%',
     height: '110%', 

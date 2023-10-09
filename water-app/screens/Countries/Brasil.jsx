@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet,Pressable, ImageBackground, Text, View } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
 import FloatingView from '../../components/animation/FloatingView';
+import Balao from '../../components/balao';
 
 export default function Brasil() {
     
@@ -12,6 +13,9 @@ const navigation = useNavigation();
     <View style={[styles.container]}>
         
             <ImageBackground source={require('../../assets/screenBackgrounds/countries/Brasil/BrasilZ.png')} resizeMode="center" style={styles.image}>
+                        <View style={[styles.balaoContainer]}> 
+                          <Balao pergunta={'Brazil it is then! So much diversity! Choose our destination!'} dropletState={2}></Balao>
+                        </View>
                     <ImageBackground
                         source={require('../../assets/screenBackgrounds/countries/Brasil/SouthWest/BrasilSouthWestHighlight.png')}
                         resizeMode="center" 
@@ -49,5 +53,10 @@ const styles = StyleSheet.create({
     height: '7%',
     cursor: 'pointer'
   },
+  balaoContainer:{
+    alignSelf: 'center',
+    position: 'absolute',
+    left: "10%"
+  }
   
 });
